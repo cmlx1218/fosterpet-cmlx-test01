@@ -1,0 +1,23 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: @defaultZone@
+  instance:
+    prefer-ip-address: @addressIP@
+    ip-address: ${spring.cloud.client.ip-address}:${server.port}
+
+
+
+spring:
+  cloud:
+    config:
+      name: application-test01
+      profile: @profileActive@
+      label: master
+      discovery:
+        enabled: true
+        service-id: cmlx-config
+
+feign:
+  hystrix:
+    enabled: true
