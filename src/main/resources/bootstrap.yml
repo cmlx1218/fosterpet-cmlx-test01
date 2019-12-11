@@ -19,7 +19,7 @@ spring:
         service-id: cmlx-config
 
   datasource:
-    url: jdbc:mysql://39.96.178.201:3326/cmlx
+    url: jdbc:mysql://39.96.178.201:3306/cmlx
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
